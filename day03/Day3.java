@@ -13,7 +13,6 @@ public class Day3 {
 		while(scanner.hasNextLine()){
 			line = scanner.nextLine();
 			String[] tab = line.trim().split("\\s+");
-			System.out.println(Arrays.toString(tab));
 			int[] array = Arrays.asList(tab).stream().mapToInt(Integer::parseInt).toArray();
 			Arrays.sort(array);
 			if(array[0]+array[1]>array[2])
